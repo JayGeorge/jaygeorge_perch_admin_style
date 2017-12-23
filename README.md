@@ -26,11 +26,11 @@ body {
     --colour-main: #00a9eb;
     --colour-main-hover: #0084b7;
     --colour-perch-background: #fcfcfc;
-    /* GROUP ATOMS -- DECORATION -- TEXT
+    /* GROUP VARIABLES -- DECORATION -- TEXT
     =================================================== */
     --font-family-main: tablet-gothic, sans-serif;
     --font-family-headline: abril-titling, serif;
-    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
+    /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     --font-family-main-weight-normal: 400;
     --font-family-main-weight-strong: 600;
