@@ -1,0 +1,11 @@
+# OS or Editor folders
+.DS_Store
+.dropbox
+
+# Sublime Text added files
+*.sublime-project
+*.sublime-workspace
+
+# Gulp, Grunt, etc.
+# Ignore node_modules, we already have the install information from package.js
+node_modules/
