@@ -46,7 +46,7 @@
     </ol>';
 
     echo $HTML->heading1('Notes');
-    echo '<p>This app contains base styling. To future proof as much as possible this app tries not to touch any layout, only padding and colouring adjustments. Do <em>not</em> change the values of any file in the plugin folder—instead use your new <code>/perch/addons/plugins/ui/custom-admin.css</code> to style the admin.</p>
+    echo '<p>This app contains base styling. To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do <em>not</em> change the values of any file in the plugin folder—instead use your new <code>/perch/addons/plugins/ui/custom-admin.css</code> to style the admin.</p>
 
     <p><sub>v. ' . date('Y-m-d H:i:s',filemtime($_SERVER['DOCUMENT_ROOT'].'/perch/addons/apps/jaygeorge_admin_css')) . '</sub></p>';
 
