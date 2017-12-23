@@ -25,7 +25,6 @@ body {
     =================================================== */
     --colour-main: #00a9eb;
     --colour-main-hover: #0084b7;
-    --colour-perch-background: #fcfcfc;
     /* GROUP VARIABLES -- DECORATION -- TEXT
     =================================================== */
     --font-family-main: tablet-gothic, sans-serif;
