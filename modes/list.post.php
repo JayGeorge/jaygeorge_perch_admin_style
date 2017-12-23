@@ -15,7 +15,7 @@
     echo $HTML->heading1('About the Admin Style app');
 
     // if (isset($message)) echo $message;
-    echo '<p>The <em>Admin Style</em> app styles the Perch admin.<br><strong>All settings for Admin Style are stored in <a href="/perch/core/settings#jaygeorge_admin_css">Settings</a></strong>.</p><p>It&apos;s been tested in the latest versions of Chrome, Safari, Firefox, and Microsoft Edge. It mostly just needs browsers that support CSS variables, which are used extensively in the app.</p><p>This app was developed by Jay George.</p>';
+    echo '<p>The <em>Admin Style</em> app styles the Perch admin.<br><strong>All settings for Admin Style are stored in <a href="/perch/core/settings#jaygeorge_perch_admin_css">Settings</a></strong>.</p><p>It&apos;s been tested in the latest versions of Chrome, Safari, Firefox, and Microsoft Edge. It mostly just needs browsers that support CSS variables, which are used extensively in the app.</p><p>This app was developed by Jay George.</p>';
 
     echo $HTML->heading1('Instructions');
 
@@ -29,7 +29,7 @@
             </ul>
         </li>
         <li>
-            <strong>Copy the starter files</strong> in <code>/perch/addons/apps/jaygeorge_admin_css/extra/</code> paste them into <code>/perch/addons/plugins/ui</code>
+            <strong>Copy the starter files</strong> in <code>/perch/addons/apps/jaygeorge_perch_admin_css/extra/</code> paste them into <code>/perch/addons/plugins/ui</code>
         </li>
         <li>
             <strong>Add any client-specific admin styling</strong>. You should now use <code>/perch/addons/plugins/ui/custom-admin.css</code> to add client-specific CSS to brand the admin. You may just want to change the variable values.
@@ -41,14 +41,14 @@
             <strong>Add your favicon</strong> as <code>/perch/addons/plugins/ui/favicon.ico</code>
         </li>
         <li>
-            <strong>Go through the app <a href="/perch/core/settings#jaygeorge_admin_css">settings</a></strong> page to add extra things like external font stylesheets.
+            <strong>Go through the app <a href="/perch/core/settings#jaygeorge_perch_admin_css">settings</a></strong> page to add extra things like external font stylesheets.
         </li>
     </ol>';
 
     echo $HTML->heading1('Notes');
     echo '<p>This app contains base styling. To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do <em>not</em> change the values of any file in the plugin folder—instead use your new <code>/perch/addons/plugins/ui/custom-admin.css</code> to style the admin.</p>
 
-    <p><sub>v. ' . date('Y-m-d H:i:s',filemtime($_SERVER['DOCUMENT_ROOT'].'/perch/addons/apps/jaygeorge_admin_css')) . '</sub></p>';
+    <p><sub>v. ' . date('Y-m-d H:i:s',filemtime($_SERVER['DOCUMENT_ROOT'].'/perch/addons/apps/jaygeorge_perch_admin_css')) . '</sub></p>';
 
     if (PerchUtil::count($things)) {
 

@@ -1,14 +1,14 @@
 <?php
-    $this->register_app('jaygeorge_admin_css', 'Admin Style', 1, 'An app that styles the Perch admin', 1.0);
-    $this->require_version('jaygeorge_admin_css', '2.8');
-    $this->add_setting('jaygeorge_admin_css_external_font_stylesheet', 'External Font Stylesheet', 'text', false,'','This is an optional stylesheet include for loading something like Typekit or Google Fonts e.g. https://use.typekit.net/dsl0pss.css');
-    $this->add_create_page('jaygeorge_admin_css', 'edit');
+    $this->register_app('jaygeorge_perch_admin_css', 'Admin Style', 1, 'An app that styles the Perch admin', 1.0);
+    $this->require_version('jaygeorge_perch_admin_css', '2.8');
+    $this->add_setting('jaygeorge_perch_admin_css_external_font_stylesheet', 'External Font Stylesheet', 'text', false,'','This is an optional stylesheet include for loading something like Typekit or Google Fonts e.g. https://use.typekit.net/dsl0pss.css');
+    $this->add_create_page('jaygeorge_perch_admin_css', 'edit');
 
-    $API = new PerchAPI(1.0, 'jaygeorge_admin_css');
+    $API = new PerchAPI(1.0, 'jaygeorge_perch_admin_css');
 
     function get_external_font_stylesheet() { 
-        $API = new PerchAPI(1.0, 'jaygeorge_admin_css');
-        $external_font_stylesheet = $API->get('Settings')->get('jaygeorge_admin_css_external_font_stylesheet')->val();
+        $API = new PerchAPI(1.0, 'jaygeorge_perch_admin_css');
+        $external_font_stylesheet = $API->get('Settings')->get('jaygeorge_perch_admin_css_external_font_stylesheet')->val();
         return $external_font_stylesheet;
     }
 
