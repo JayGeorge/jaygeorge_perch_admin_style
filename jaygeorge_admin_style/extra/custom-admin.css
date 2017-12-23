@@ -4,10 +4,10 @@ body {
     =================================================== */
     --colour-main: #222;
     --colour-main-hover: #000;
-    /* GROUP ATOMS -- DECORATION -- TEXT
+    /* GROUP VARIABLES -- DECORATION -- TEXT
     =================================================== */
     /*--font-family-main: source-sans-pro, sans-serif;*/
-    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
+    /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     /*--font-family-main-weight-normal: 400;*/
     /*--font-family-main-weight-strong: 600;*/

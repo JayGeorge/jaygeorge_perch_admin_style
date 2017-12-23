@@ -31,10 +31,10 @@
     =================================================== */
     --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
     --box-shadow-b-light: 0 10px 9px -8px rgba(0, 0, 0, 0.05);
-    /* GROUP ATOMS -- DECORATION -- TEXT
+    /* GROUP VARIABLES -- DECORATION -- TEXT
     =================================================== */
     --font-family-main: sans-serif;
-    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
+    /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     --font-family-main-weight-normal: 400;
     --font-family-main-weight-strong: 600;
