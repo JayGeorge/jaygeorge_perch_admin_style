@@ -1,0 +1,49 @@
+:root {
+    /* GROUP VARIABLES -- RHYTHM
+    =================================================== */
+    --rhythm-s-0-0: 0.4rem;
+    --rhythm-s-0: 0.5rem;
+    --rhythm-s: 0.8rem;
+    --rhythm-s-1: 1.1rem;
+    --rhythm-s-2: 1.35rem;
+
+    --rhythm-m: 1.5rem;
+
+    --rhythm-m-1: 1.8rem;
+
+    --rhythm-l: 2rem;
+
+    --rhythm-l-1: 2.5rem;
+    --rhythm-l-2: 2.8rem;
+
+    --rhythm-perch-main-gutters: 24px;
+    /* GROUP VARIABLES -- LAYOUT -- CONSTRAINTS -- MAX
+    =================================================== */
+    --max-width-reading: 42rem;
+    /* GROUP VARIABLES -- COLOURS -- PERCH
+    =================================================== */
+    --colour-perch-border-grey: #e9eaea;
+    /* GROUP VARIABLES -- COLOURS -- THEME
+    =================================================== */
+    --colour-main: #222;
+    --colour-main-hover: #000;
+    /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
+    =================================================== */
+    --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
+    --box-shadow-b-light: 0 10px 9px -8px rgba(0, 0, 0, 0.05);
+    /* GROUP ATOMS -- DECORATION -- TEXT
+    =================================================== */
+    --font-family-main: sans-serif;
+    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
+    =================================================== */
+    --font-family-main-weight-normal: 400;
+    --font-family-main-weight-strong: 600;
+}
+/* --mq-root-variable-adjustments */
+@media (min-width: 1100px) {
+    :root {
+        /* GROUP VARIABLES -- RHYTHM
+        ===================================================  */
+        --rhythm-s: 0.85rem;
+    }
+}

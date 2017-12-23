@@ -1,0 +1,557 @@
+/* GROUP ATOMS / ELEMENTS
+=================================================== */
+body {
+    font-family: var(--font-family-main);
+}
+/* GROUP ATOMS / ELEMENTS / HEADINGS
+=================================================== */
+.title-panel h1 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+
+
+
+/* GROUP ATOMS / LINKS
+=================================================== */
+a {
+    color: var(--colour-main);
+}
+
+a.primary:link,
+a.primary:visited,
+.primary {
+    border-color: #ddd;
+}
+
+
+
+
+/* GROUP ATOMS / BUTTONS
+=================================================== */
+/* e.g. Collections > Add another item */
+.button.button-icon {
+    /* Increase */
+    padding: var(--rhythm-s);
+}
+
+/* e.g. Collections > Pagination */
+.button.button-simple {
+    /* Increase */
+    padding: var(--rhythm-s) var(--rhythm-s-1);
+}
+
+/* e.g. Delete button */
+.button.button-small {
+    padding: 0.4rem 0.6rem;
+    line-height: 1!important;
+}
+
+.back,
+.pagination-number.pagination-current,
+/* Global search */
+.button.action-info,
+.button.button-icon.action-info,
+.button.button-small.action-info {
+    background: var(--colour-main);
+}
+
+/* "back" button in top left e.g. "< Pages" */
+.back {
+    padding: 13px 25px;
+    /* To appear more centered */
+    padding-right: 35px;
+    border-radius: 3px;
+}
+
+.sidebar-back .back {
+    display: inline-block;
+    /* Ellipsis */
+    /* =JFG. Need to be inline-block or block to enable ellipsis */
+    white-space: nowrap;
+    /* 'overflow' value must be different from 'visible' */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional */
+     max-width: 100%; 
+    /* -- */
+    color: white;
+}
+
+/* Icon inside the "back" button in top left */
+.sidebar-back .icon {
+    margin-right: var(--rhythm-s-0);
+    fill: white;
+}
+
+.sidebar-back a:hover,
+.sidebar-back a:focus {
+    border-bottom: 0;
+}
+
+header .sidebar-back a:hover,
+header .sidebar-back a:focus {
+    background: none;
+}
+
+/* e.g. Add another item */
+.button.to-the-top:hover,
+.title-panel .button:hover,
+.title-panel .button-icon:hover,
+.title-panel .button-icon.active,
+.sidebar-back a:hover,
+.sidebar-back a:focus {
+    background: var(--colour-main-hover);
+    /* e.g. My Site */
+    border-color: transparent;
+}
+
+
+
+
+/* GROUP MOLECULES / BARS
+=================================================== */
+.topbar.runway.user_theme_dark,
+.topbar.user_theme_dark,
+.topbar.runway.user_theme_light,
+.topbar.user_theme_light,
+.sidebar {
+    background-repeat: no-repeat;
+}
+/* GROUP MOLECULES / BARS / TOP
+=================================================== */
+.utilnav a,
+.utilnav li .logout,
+.utilnav .logout,
+.utilnav a.logout:focus {
+    padding-bottom: var(--rhythm-m);
+    padding-top: var(--rhythm-m);
+    border-radius: 0;
+}
+/* GROUP MOLECULES / BARS / TOP / RHYTHM
+=================================================== */
+.topbar.user_theme_dark a span {
+  /* So that bar doesn't shift once there is focus on something like 'settings' */
+    border-bottom: 2px solid transparent;
+}
+
+.utilnav .logout {
+    border: 2px solid transparent;
+}
+
+.utilnav a:focus {
+    padding-bottom: var(--rhythm-m);
+}
+
+.utilnav {
+    padding-right: 0;
+}
+
+/* Custom */
+@media (min-width: 375px) {
+    .utilnav .logout,
+    .utilnav a.logout:focus {
+        padding-right: var(--rhythm-s-1);
+        padding-left: var(--rhythm-s-1);
+    }
+}
+
+/* Custom */
+@media (min-width: 950px) {
+    .utilnav a {
+        padding-right: var(--rhythm-s);
+        padding-left: var(--rhythm-s);
+    }
+}
+/* GROUP MOLECULES / BARS / TOP / DECORATION
+=================================================== */
+/* --mq-after-mobile-layout */
+@media (min-width: 550px) {
+    .topbar.runway.user_theme_dark.nobrand,
+    .topbar.runway.user_theme_light.nobrand,
+    .topbar.user_theme_dark.nobrand,
+    .topbar.user_theme_light.nobrand {
+        background-image: url(/perch/addons/plugins/ui/logo-dark.svg);
+        background-size: 50px;
+        background-position: center center;
+    }
+
+    .topbar.runway.user_theme_light.nobrand,
+    .topbar.user_theme_light.nobrand {
+        background-image: url(/perch/addons/plugins/ui/logo.svg);
+    }
+}
+/* GROUP MOLECULES / BARS / SIDEBAR
+=================================================== */
+/* GROUP MOLECULES / BARS / SIDEBAR / RHYTHM
+=================================================== */
+.sidebar {
+    padding-top: var(--rhythm-s-1);
+}
+
+.show-sidebar .sidebar {
+    /* Increase */
+    padding-top: 3.5em;
+}
+
+header .sidebar-back {
+    /* Decrease */
+    margin-bottom: var(--rhythm-l);
+}
+
+.sidebar-back {
+    /* Increase */
+    margin-bottom: var(--rhythm-l);
+}
+
+.sidebar li a,
+.sidebar li span {
+    /* Increase */
+    padding-bottom: var(--rhythm-s);
+    padding-top: var(--rhythm-s);
+}
+/* GROUP MOLECULES / BARS / SIDEBAR / DECORATION
+=================================================== */
+.sidebar-back,
+.sidebar-back a,
+.sidebar h2,
+.sidebar h3 {
+    color: black;
+}
+
+.sidebar-back {
+    /* Decrease */
+    font-size: 1.05em;
+}
+
+.sidebar h3 {
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+.sidebar {
+    background-color: white;
+}
+
+.sidebar li {
+    border: none;
+}
+
+.sidebar li a,
+.sidebar li span {
+    /* Lighter */
+    color: #666;
+}
+
+.sidebar li a {
+    border-left: 4px solid #fafafa;
+}
+
+.sidebar .selected {
+    border-left: 4px solid var(--colour-main);
+    font-weight: var(--font-family-main-weight-strong);
+}
+/* GROUP MOLECULES / BARS / SIDEBAR / MOBILE
+=================================================== */
+/* --mq-before-mobile-layout */
+@media (max-width: 549px) {
+    .sidebar {
+        background-image: url(/perch/addons/plugins/ui/logo.svg);
+        background-size: 50px 75px;
+        background-position: bottom right 15px;
+    }
+}
+
+
+
+
+/* GROUP MOLECULES / NOTIFICATIONS
+=================================================== */
+.notification {
+    padding-bottom: var(--rhythm-s-1);
+    padding-top: var(--rhythm-s-1);
+    margin-right: var(--rhythm-perch-main-gutters);
+    margin-left: var(--rhythm-perch-main-gutters);
+    border-radius: 2px;
+}
+
+
+
+
+/* GROUP MOLECULES / SEARCH
+=================================================== */
+/* e.g. Global search */
+.role-search .button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.dialog .form-simple input[type=search] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dialog .form-simple input[type=search]:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* GROUP ORGANISMS / SMART BAR & TABLES
+=================================================== */
+/* e.g. Pages > Collections */
+.smartbar {
+    /* Fix gap */
+    margin-bottom: 0;
+}
+
+/* Top Bar */
+.smartbar li a,
+.smartbar li button,
+/* Rows */
+table th,
+table td {
+    /* Increase */
+    padding-bottom: var(--rhythm-s);
+    padding-top: var(--rhythm-s);
+}
+
+.breadcrumb {
+    /* Increase */
+    padding-bottom: var(--rhythm-s-0);
+    padding-top: var(--rhythm-s-0);
+}
+
+th,
+table th,
+.smartbar li .breadcrumb a:last-child {
+    /* Ensure the correct weight is being used */
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+table th {
+    font-size: 1em;
+}
+
+a.primary:link,
+a.primary:visited,
+.primary {
+    color: #333;
+    font-size: 1.15em;
+    /* Increase */
+    margin-left: var(--rhythm-s-0);
+}
+
+td.region {
+    font-size: 0.85em;
+    opacity: 0.85;
+}
+
+table tr {
+    /* Add some borders */
+    border-left: 1px solid var(--colour-perch-border-grey);
+    border-right: 1px solid var(--colour-perch-border-grey);
+}
+
+table th,
+thead tr:hover,
+/* e.g. Regions > Main Heading */
+.divider {
+    background: linear-gradient(to bottom, transparent 0%,#fbfbfb 300%);
+}
+
+/* --mq-before-perch-desktop-layout */
+@media (max-width: 767px) {
+    table tr {
+        border-bottom: 1px solid var(--colour-perch-border-grey);
+        border-top: 1px solid var(--colour-perch-border-grey);
+        box-shadow: var(--box-shadow-b-light);
+        /* Increase */
+        margin-bottom: var(--rhythm-m);
+    }
+
+    table td {
+        /* Lighter */
+        border-bottom: 1px solid var(--colour-perch-border-grey);
+    }
+
+    table td:before {
+        font-weight: var(--font-family-main-weight-strong);
+        /* Improve readability */
+        text-transform: none;
+    }
+
+    table.nested-list tr {
+        box-shadow: none;
+    }
+}
+
+/* Custom */
+@media (max-width: 1099px) {
+    table.nested-list td {
+        /* Increase */
+        padding-bottom: var(--rhythm-s-1);
+        padding-top: var(--rhythm-s-1);
+    }
+}
+
+
+
+
+/* GROUP ORGANISMS / EDITOR
+=================================================== */
+.divider {
+    padding-bottom: var(--rhythm-s);
+    padding-top: var(--rhythm-s);
+    font-weight: var(--font-family-main-weight-strong);
+    border: 1px solid var(--colour-perch-border-grey);
+}
+
+.field-wrap + .divider,
+.divider-collapse-zone + .divider {
+    /* e.g. Settings */
+    margin-top: var(--rhythm-l);
+}
+
+/* e.g. if first on the page */
+.edititem > .divider:first-child,
+/* e.g. Set Options */
+.form-simple > .divider:first-child {
+    border-top: 0;
+}
+
+.form-simple label,
+.form-simple .fieldset-inner .legend-wrap,
+.repeater-heading {
+    /* Ensure correct weight is used */
+    font-weight: var(--font-family-main-weight-strong);
+    /* Improve contrast */
+    color: black;
+    /* Increase */
+    font-size: 1.05em;
+}
+
+.checkbox-single label {
+    /* Ensure correct weight is used */
+    font-weight: var(--font-family-main-weight-normal);
+}
+
+.form-simple label {
+    /* Increase */
+    padding-bottom: var(--rhythm-s);
+}
+
+.input-simple,
+textarea.input-simple,
+/* e.g. selecting a category */
+.selectize-input {
+    /* Increase */
+    padding: var(--rhythm-s);
+}
+
+.field-annotations {
+    flex-direction: row;
+    margin-top: var(--rhythm-s);
+}
+
+.inline-help {
+    margin-top: var(--rhythm-s-0-0);
+}
+
+.inline-help + .form-entry {
+    padding-top: var(--rhythm-s);
+}
+
+.asset-badge .icon-upload {
+    /* Decrease */
+    width: 40px;
+}
+/* GROUP ORGANISMS / EDITOR / TAB e.g. REGION OPTIONS
+=================================================== */
+.form-simple /* .field-wrap*/.checkbox-single {
+    padding-bottom: 0;
+}
+
+.form-simple .submit-bar /* .field-wrap*/.checkbox-single {
+    /* Override for Submit bar e.g. "Save as draft" checkbox */
+    padding-bottom: var(--rhythm-s-0);
+}
+
+/* .field-wrap + .field-wrap { */
+    /* Removed in case there are lots of checkbox fields in a row */
+    /* padding-top: var(--rhythm-s); */
+/* } */
+
+.field-wrap + .checkbox-single {
+    padding-top: var(--rhythm-s-0);
+}
+/* GROUP ORGANISMS / EDITOR / BLOCKS
+=================================================== */
+.block-add-bar {
+    padding-left: 0;
+    margin-bottom: var(--rhythm-m);
+}
+
+.block-add-bar a,
+.block-add-prompt .block-add {
+    font-size: 1.1em;
+    font-weight: var(--font-family-main-weight-strong);
+    background: none;
+}
+
+.block-add-bar .icon-add {
+    /* Ugly, let's replace with text "+" instead */
+    display: none;
+}
+
+.block-add-bar::before {
+    content: "+";
+    margin-right: var(--rhythm-s);
+    font-size: 1.5em;
+    opacity: 0.5;
+}
+
+
+
+
+/* GROUP ORGANISMS / GENERAL
+=================================================== */
+/* e.g. Used as a default "About" container in the app sample found here: https://static.grabaperch.com/docs/api/my_sample_v2.1.zip */
+.compat-container {
+    padding-top: var(--rhythm-l-1);
+    max-width: var(--max-width-reading);
+}
+
+.compat-container h1 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+.compat-container p + h1 {
+    padding-top: var(--rhythm-m);
+}
+
+.compat-container li {
+    padding-bottom: var(--rhythm-s-1);
+}
+
+.compat-container li ul {
+    padding-top: var(--rhythm-s);
+}
+
+.compat-container li li {
+    padding-bottom: var(--rhythm-s-0);
+}
+
+.compat-container code {
+    background: #f1f1f1;
+    margin-right: var(--rhythm-s-0);
+    margin-left: var(--rhythm-s-0);
+}
+
+.compat-container strong,
+.compat-container strong a {
+    color: #00a8ef;
+}

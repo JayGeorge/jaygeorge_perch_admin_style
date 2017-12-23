@@ -1,0 +1,85 @@
+/* GROUP MOLECULES / LOGIN / RHYTHM
+=================================================== */
+.page-login {
+    /* Decrease */
+    padding-bottom: 10%;
+}
+
+.form-login {
+    padding-bottom: var(--rhythm-s-0-0);
+    padding-top: var(--rhythm-s-1);
+}
+/* GROUP MOLECULES / LOGIN / DECORATION
+=================================================== */
+.page-login {
+    background: white;
+}
+
+.page-login .topbar {
+    display: block;
+    text-align: center;
+}
+
+.page-login .topbar h1 {
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+body .login-box .hd.topbar {
+    background: white;
+    color: black;
+    font-size: 0.5em;
+    border: 1px solid var(--colour-perch-border-grey);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.login-box {
+    box-shadow: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.login-box .bd {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.login-box .buttons a.reset-link {
+    color: #aaa;
+}
+
+.login-box .form-simple label {
+    font-weight: 600;
+    padding-bottom: var(--rhythm-s-0-0);
+}
+
+.login-box .input-simple {
+    padding: var(--rhythm-s);
+}
+
+.login-box .button.button-simple {
+    padding: var(--rhythm-s) var(--rhythm-s-1);
+}
+/* GROUP MOLECULES / LOGIN / CONTAINERS
+=================================================== */
+.fix-flex-height {
+    width: 100%;
+    max-width: 21rem;
+    position: relative;
+}
+
+.logincont {
+    width: 100%;
+}
+
+.login-box .hd {
+    /* Decrease */
+    padding-bottom: var(--rhythm-s-1);
+    padding-top: var(--rhythm-s-1);
+}
+
+.login-box .form-simple .fieldset-inner,
+.login-box .form-simple .field-wrap {
+    /* Decrease */
+    padding-left: var(--rhythm-s-1);
+}
