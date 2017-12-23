@@ -21,7 +21,7 @@ Here is an example of the minimal amount of CSS you may need to add:
 ```
 /* Redefine/override any CSS variables here */
 body {
-    /* GROUP VARIABLES -- COLOURS -- THEME
+    /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main: #00a9eb;
     --colour-main-hover: #0084b7;
