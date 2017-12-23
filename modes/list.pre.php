@@ -2,7 +2,7 @@
     
     $HTML = $API->get('HTML');
     
-    $Things = new jaygeorge_perch_admin_cssSync_Things($API);
+    $Things = new jaygeorge_perch_admin_styleSync_Things($API);
    
     $things = array();
 	
