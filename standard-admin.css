@@ -225,6 +225,11 @@ header .sidebar-back {
     font-size: 1.05em;
 }
 
+.sidebar .badge {
+    /* e.g. Blog Comments number */
+    background: var(--colour-main);
+}
+
 .sidebar h3 {
     font-weight: var(--font-family-main-weight-strong);
 }
