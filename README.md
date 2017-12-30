@@ -20,6 +20,8 @@ Run `git status`. You should notice a new `.gitmodules` file if this is the firs
 - Make sure you're inside your main project directory
 - Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repo.
 
+You'll see your main repo will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
+
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
 
