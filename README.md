@@ -4,6 +4,22 @@
 - You should now see the app name in the left column of your Perch admin
 - Go into the app in the admin and follow instructions
 
+# Installing as a Git Submodule (optional but recommended)
+To keep this app up to date easily I recommend you install it as a Git submodule to your project. You can then check for updates easily rather than re-downloading this project.
+
+Here are some brief instructions:
+
+- Make sure you're inside your main project directory
+- Run the command `git submodule add https://github.com/JayGeorge/jaygeorge_perch_admin_style.git perch/addons/apps/jaygeorge_perch_admin_style`
+
+This command will add the Admin Style app into the directory `perch/addons/apps/`
+
+Run `git status`. You should notice a new `.gitmodules` file if this is the first time you've added a submodule to your repo. This is a configuration file that stores the mapping between the project’s URL and the local subdirectory you’ve pulled it into.
+
+## Updating the app
+- Make sure you're inside your main project directory
+- Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repo.
+
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
 
