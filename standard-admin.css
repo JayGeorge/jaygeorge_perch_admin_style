@@ -101,7 +101,14 @@ header .sidebar-back a:focus {
 .title-panel .button-icon:hover,
 .title-panel .button-icon.active,
 .sidebar-back a:hover,
-.sidebar-back a:focus {
+.sidebar-back a:focus,
+/* e.g. Global search */
+.button.action-info:hover,
+.button.action-info.active,
+.button.button-icon.action-info:hover,
+.button.button-icon.action-info.active,
+.button.button-small.action-info:hover,
+.button.button-small.action-info.active {
     background: var(--colour-main-hover);
     /* e.g. My Site */
     border-color: transparent;
