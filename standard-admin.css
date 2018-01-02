@@ -524,6 +524,12 @@ textarea.input-simple,
     font-size: 1.5em;
     opacity: 0.5;
 }
+/* GROUP ORGANISMS / EDITOR / REPEATERS
+=================================================== */
+.repeated-fields {
+    /* Add some definition between repeaters, which is needed when there are more than a few fields within each repeater */
+    border-top: 3px solid var(--colour-main);
+}
 
 
 
