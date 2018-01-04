@@ -371,7 +371,7 @@ table th,
 thead tr:hover,
 /* e.g. Regions > Main Heading */
 .divider {
-    background: linear-gradient(to bottom, transparent 0%,#fbfbfb 300%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#fbfbfb 300%);
 }
 
 /* --mq-before-perch-desktop-layout */
