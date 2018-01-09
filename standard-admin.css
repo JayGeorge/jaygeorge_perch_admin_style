@@ -330,10 +330,10 @@ table td {
     padding-top: var(--rhythm-s);
 }
 
-.breadcrumb {
+.smartbar li .breadcrumb.tab-active a:last-child {
     /* Increase */
-    padding-bottom: var(--rhythm-s-0);
-    padding-top: var(--rhythm-s-0);
+    padding-bottom: var(--rhythm-s);
+    padding-top: var(--rhythm-s);
 }
 
 th,
