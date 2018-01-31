@@ -6,16 +6,10 @@
 
     $API = new PerchAPI(1.0, 'jaygeorge_perch_admin_style');
 
-    function get_external_font_stylesheet() { 
-        $API = new PerchAPI(1.0, 'jaygeorge_perch_admin_style');
-        $external_font_stylesheet = $API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val();
-        return $external_font_stylesheet;
-    }
-
     $Perch = Perch::fetch();
     // We need to separate variables.css out so that the login.css can make use of it (which is loaded outside the app, so it can be available before the admin is loaded)
     $Perch->add_css($API->app_path() . '/variables.css');
     $Perch->add_css($API->app_path() . '/standard-admin.css');
     $Perch->add_css('/perch/addons/plugins/ui/custom-admin.css');
-    $Perch->add_css(get_external_font_stylesheet());
+    $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val());
     $Perch->add_head_content('<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico">');
