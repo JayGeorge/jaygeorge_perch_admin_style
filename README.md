@@ -22,6 +22,9 @@ Run `git status`. You should notice a new `.gitmodules` file if this is the firs
 
 You'll see your main repo will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
 
+## Downloading a repo that contains this submodule
+You can download all submodules at once using the `--recurse-submodules` command. Here's an example `git clone your_repo --recurse-submodules`
+
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
 
