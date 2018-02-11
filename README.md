@@ -14,16 +14,16 @@ Here are some brief instructions:
 
 This command will add the Admin Style app into the directory `perch/addons/apps/`
 
-Run `git status`. You should notice a new `.gitmodules` file if this is the first time you've added a submodule to your repo. This is a configuration file that stores the mapping between the project’s URL and the local subdirectory you’ve pulled it into.
+Run `git status`. You should notice a new `.gitmodules` file if this is the first time you've added a submodule to your repository. This is a configuration file that stores the mapping between the project’s URL and the local subdirectory you’ve pulled it into.
 
 ## Updating the app
 - Make sure you're inside your main project directory
-- Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repo.
+- Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repository.
 
-You'll see your main repo will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
+You'll see your main repository will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
 
-## Downloading a repo that contains this submodule
-You can download all submodules at once using the `--recurse-submodules` command. Here's an example `git clone your_repo --recurse-submodules`
+## Downloading a repository that contains this submodule
+You can download all submodules at once using the `--recurse-submodules` command. Here's an example `git clone your_repository --recurse-submodules`
 
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
