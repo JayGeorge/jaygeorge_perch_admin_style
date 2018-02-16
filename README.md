@@ -1,4 +1,5 @@
 # Installation
+- If you are downloading this app as a zip file from GitHub, rather than installing as a submodule, you should rename the downloadded folder from `jaygeorge_perch_admin_style-master` to `jaygeorge_perch_admin_style`
 - Drop the `jaygeorge_perch_admin_style` folder into your `/perch/addons/apps` folder
 - Log into Perch
 - You should now see the app name in the left column of your Perch admin
