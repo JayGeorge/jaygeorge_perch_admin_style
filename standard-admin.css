@@ -39,7 +39,7 @@ a.primary:visited,
 /* e.g. Collections > Pagination */
 .button.button-simple {
     /* Increase */
-    padding: var(--rhythm-s) var(--rhythm-s-1);
+    padding: 12px 1.6em;
 }
 
 /* e.g. Delete button */
@@ -285,6 +285,26 @@ header .sidebar-back {
     margin-right: var(--rhythm-perch-main-gutters);
     margin-left: var(--rhythm-perch-main-gutters);
     border-radius: 2px;
+}
+
+
+
+
+/* GROUP MOLECULES / DIALOGUE
+=================================================== */
+.dialog-content.role-confirm {
+    /* Increase */
+    width: 500px;
+}
+
+.dialog h1 {
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+.confirm-dialog-buttons {
+    /* Increase */
+    padding-bottom: 22px;
+    padding-top: 22px;
 }
 
 
