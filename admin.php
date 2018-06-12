@@ -12,4 +12,7 @@
     $Perch->add_css($API->app_path() . '/standard-admin.css');
     $Perch->add_css('/perch/addons/plugins/ui/custom-admin.css');
     $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val());
-    $Perch->add_head_content('<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico">');
+
+    // Make sure favicon isn't cached
+    $favicon_version = '<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'].'/perch/addons/plugins/ui/favicon.ico') . '">';
+    $Perch->add_head_content($favicon_version);
