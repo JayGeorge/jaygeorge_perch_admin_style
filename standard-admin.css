@@ -483,13 +483,18 @@ textarea.input-simple,
     padding: var(--rhythm-s);
 }
 
-.field-annotations {
-    flex-direction: row;
-    margin-top: var(--rhythm-s);
+.form-entry {
+    margin-bottom: 0.2rem;
 }
 
-.inline-help {
-    margin-top: var(--rhythm-s-0-0);
+.field-annotations {
+    flex-direction: row;
+}
+
+.inline-help:last-child {
+    /* e.g. inline help below an image upload area
+    :last-child to avoid unintentionally adding margin when help instructions are above a textarea */
+    margin-bottom: var(--rhythm-s);
 }
 
 .inline-help + .form-entry {
@@ -547,6 +552,8 @@ textarea.input-simple,
 /* GROUP ORGANISMS / EDITOR / REPEATERS
 =================================================== */
 .repeated-fields {
+    /* Increase */
+    padding-top: var(--rhythm-s-0);
     /* Add some definition between repeaters, which is needed when there are more than a few fields within each repeater */
     border-top: 3px solid var(--colour-main);
 }
