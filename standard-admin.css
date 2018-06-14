@@ -472,7 +472,7 @@ thead tr:hover,
 
 .form-simple label {
     /* Increase */
-    padding-bottom: var(--rhythm-s);
+    padding-bottom: var(--rhythm-s-0);
 }
 
 .input-simple,
