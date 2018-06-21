@@ -249,6 +249,12 @@ header .sidebar-back {
     border: none;
 }
 
+.sidebar .subnav li:not(:first-child) {
+    /* De-emphasise subnav items e.g. below 'Pages' so it's more obvious that they are children.
+    This should affect nav items like Collections, Master Pages, etc. */
+    font-size: 0.9em;
+}
+
 .sidebar li a,
 .sidebar li span {
     /* Lighter */
