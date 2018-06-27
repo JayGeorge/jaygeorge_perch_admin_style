@@ -261,7 +261,9 @@ header .sidebar-back {
     color: #666;
 }
 
-.sidebar li a {
+/* Not sidebar, because .selected is not available in the ul.appmenu, making it confusing when you a 'selected' state in some menus, and others not */
+/* .sidebar li a, */
+.subnav li a {
     border-left: 4px solid #fafafa;
 }
 
