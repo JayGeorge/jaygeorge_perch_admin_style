@@ -25,6 +25,12 @@ a.primary:visited,
     border-color: #ddd;
 }
 
+.main-panel .primary img {
+    /* Clean up image descended from a link in the main panel, so that it covers the bottom border */
+    position: relative;
+    top: 7px;
+}
+
 
 
 
