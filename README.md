@@ -17,6 +17,21 @@ This command will add the Admin Style app into the directory `perch/addons/apps/
 
 Run `git status`. You should notice a new `.gitmodules` file if this is the first time you've added a submodule to your repository. This is a configuration file that stores the mapping between the project’s URL and the local subdirectory you’ve pulled it into.
 
+## Retrieving this repository as a submodule for a project
+_E.g. If you've previously installed this app as a submodule and you're now re-downloading your parent project to a new machine…_
+
+[Source](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+When you clone such a project, by default you get the directories that contain submodules, but none of the files within them yet.
+The easiest way is to always clone recursively with this command:
+
+    git clone something --recurse-submodules
+
+If you've already downloaded a repo and want to fetch submodules you can do this:
+
+`git submodule init` to initialize your local configuration file
+`git submodule update` to fetch all the data from that project and check out the appropriate commit listed in your superproject:
+
 ## Updating the app
 - Make sure you're inside your main project directory
 - Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repository.
