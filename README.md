@@ -26,8 +26,6 @@ You'll see your main repository will show an update is ready to be staged. It wi
 ## Downloading a repository that contains this submodule
 _E.g. If you've previously installed this app as a submodule and you're now re-downloading your parent project to a new machine…_
 
-[Source](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-
 When you clone such a project, by default you get the directories that contain submodules, but none of the files within them yet.
 The easiest way is to always clone recursively with this command:
 
@@ -37,6 +35,8 @@ If you've already downloaded a repo and want to fetch submodules you can do this
 
 `git submodule init` to initialize your local configuration file
 `git submodule update` to fetch all the data from that project and check out the appropriate commit listed in your superproject:
+
+[https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
