@@ -27,6 +27,8 @@
     =================================================== */
     --colour-main: #222;
     --colour-main-hover: #000;
+    --colour-success: #64d7a6;
+    --colour-fail: #e3315b;
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
     =================================================== */
     --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);

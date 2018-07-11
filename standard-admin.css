@@ -301,6 +301,17 @@ header .sidebar-back {
     border-radius: 2px;
 }
 
+.notification.notification-success,
+.notification.notification-success a.notification-link {
+    background: var(--colour-success);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(26,26,26,0.25);
+}
+
+.notification.notification-success svg {
+    fill: white;
+}
+
 
 
 
