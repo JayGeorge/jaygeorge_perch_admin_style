@@ -17,7 +17,13 @@ This command will add the Admin Style app into the directory `perch/addons/apps/
 
 Run `git status`. You should notice a new `.gitmodules` file if this is the first time you've added a submodule to your repository. This is a configuration file that stores the mapping between the project’s URL and the local subdirectory you’ve pulled it into.
 
-## Retrieving this repository as a submodule for a project
+## Updating the app
+- Make sure you're inside your main project directory
+- Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repository.
+
+You'll see your main repository will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
+
+## Downloading a repository that contains this submodule
 _E.g. If you've previously installed this app as a submodule and you're now re-downloading your parent project to a new machine…_
 
 [Source](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
@@ -31,15 +37,6 @@ If you've already downloaded a repo and want to fetch submodules you can do this
 
 `git submodule init` to initialize your local configuration file
 `git submodule update` to fetch all the data from that project and check out the appropriate commit listed in your superproject:
-
-## Updating the app
-- Make sure you're inside your main project directory
-- Run the command `git submodule update --remote`. This will update all submodules, including this Perch Admin Style repository.
-
-You'll see your main repository will show an update is ready to be staged. It will say something like `Subproject commit e2641da9d0df04df322e983d612d576d43393b67`. You can simply stage this commit with a message like "Submodule Update" or something more meaningful.
-
-## Downloading a repository that contains this submodule
-You can download all submodules at once using the `--recurse-submodules` command. Here's an example `git clone your_repository --recurse-submodules`
 
 # About this App
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
