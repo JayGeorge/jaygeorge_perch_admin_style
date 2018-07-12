@@ -463,7 +463,7 @@ thead tr:hover,
     padding-bottom: var(--rhythm-s);
     padding-top: var(--rhythm-s);
     font-weight: var(--font-family-main-weight-strong);
-    border: 1px solid var(--colour-grey);
+    border: 1px solid var(--colour-perch-border-grey);
 }
 
 .field-wrap + .divider,
