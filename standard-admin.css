@@ -581,7 +581,7 @@ textarea.input-simple,
     padding-bottom: var(--rhythm-s);
     margin-bottom: var(--rhythm-l);
     border: 1px solid var(--colour-grey);
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    box-shadow: var(--box-shadow-item);
     border-radius: 5px;
     margin-right: 24px;
     margin-left: 24px;
@@ -618,11 +618,15 @@ textarea.input-simple,
 }
 /* GROUP ORGANISMS / EDITOR / REPEATERS
 =================================================== */
+.repeated-item {
+    margin-bottom: var(--rhythm-m);
+    box-shadow: var(--box-shadow-item);
+    border: 1px solid var(--colour-grey);
+}
+
 .repeated-fields {
     /* Increase */
     padding-top: var(--rhythm-s-0);
-    /* Add some definition between repeaters, which is needed when there are more than a few fields within each repeater */
-    border-top: 3px solid var(--colour-main);
 }
 
 
