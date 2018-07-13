@@ -125,10 +125,7 @@ header .sidebar-back a:focus {
 .button.button-icon.action-success:hover,
 .button.button-icon.action-success.active,
 .button.button-small.action-success:hover,
-.button.button-small.action-success.active,
-.button.action-success,
-.button.button-icon.action-success,
-.button.button-small.action-success {
+.button.button-small.action-success.active {
     background-color: var(--colour-select);
 }
 /* GROUP ATOMS / ASSET MANAGEMENT
