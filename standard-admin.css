@@ -119,6 +119,12 @@ header .sidebar-back a:focus {
     /* e.g. My Site */
     border-color: transparent;
 }
+/* GROUP ATOMS / ASSET MANAGEMENT
+=================================================== */
+/* e.g. hovering over an image, the little 'x' prompting you to remove it */
+.asset-badge:hover .asset-badge-remove-action {
+    color: var(--colour-fail);
+}
 
 
 
