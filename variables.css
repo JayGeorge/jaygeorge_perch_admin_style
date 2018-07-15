@@ -35,6 +35,7 @@
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
     =================================================== */
     --box-shadow-item: 0px 5px 10px rgba(0,0,0,0.1);
+    --box-shadow-item: -10px 0 9px -8px rgba(0, 0, 0, 0.1);
     --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
     --box-shadow-b-light: 0 10px 9px -8px rgba(0, 0, 0, 0.05);
     /* GROUP VARIABLES -- DECORATION -- TEXT
