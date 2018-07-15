@@ -7,12 +7,18 @@
     $API = new PerchAPI(1.0, 'jaygeorge_perch_admin_style');
 
     $Perch = Perch::fetch();
+
+    // Make sure files aren't cached
+    $variables_version = '/variables.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/variables.css');
+    $standard_admin_version = '/standard-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/standard-admin.css');
+    $custom_admin_version = '/perch/addons/plugins/ui/custom-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/custom-admin.css');
+
     // We need to separate variables.css out so that the login.css can make use of it (which is loaded outside the app, so it can be available before the admin is loaded)
-    $Perch->add_css($API->app_path() . '/variables.css');
-    $Perch->add_css($API->app_path() . '/standard-admin.css');
-    $Perch->add_css('/perch/addons/plugins/ui/custom-admin.css');
+    $Perch->add_css($API->app_path() . $variables_version);
+    $Perch->add_css($API->app_path() . $standard_admin_version);
+    $Perch->add_css($custom_admin_version);
     $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val());
 
     // Make sure favicon isn't cached
-    $favicon_version = '<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'].'/perch/addons/plugins/ui/favicon.ico') . '">';
+    $favicon_version = '<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/favicon.ico') . '">';
     $Perch->add_head_content($favicon_version);
