@@ -624,6 +624,11 @@ textarea.input-simple,
     border: 1px solid var(--colour-grey);
 }
 
+.block-item .repeated-item {
+    /* Remove the box-shadow when inside a block, otherwise it's 'too much' */
+    box-shadow: none;
+}
+
 .repeated-fields {
     /* Increase */
     padding-top: var(--rhythm-s-0);
