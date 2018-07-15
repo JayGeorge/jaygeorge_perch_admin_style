@@ -621,7 +621,13 @@ textarea.input-simple,
 .repeated-item {
     margin-bottom: var(--rhythm-m);
     box-shadow: var(--box-shadow-item);
-    border: 1px solid var(--colour-grey);
+    box-shadow: -10px 0 9px -8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--colour-perch-border-grey);
+    border-left-color: var(--colour-grey);
+}
+
+.repeated-item:first-child {
+    border-top: 0;
 }
 
 .block-item .repeated-item {
