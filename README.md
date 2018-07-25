@@ -31,7 +31,7 @@ The easiest way is to always clone recursively with this command:
 
     git clone something --recurse-submodules
 
-If you've already downloaded a repo and want to fetch submodules you can do this:
+If you've already downloaded a repo and want to fetch submodules, if you're using SourceTree (GUI) you can double click the submodule in the left-hand column—SourceTree will automatically check out the latest commit. Alternatively, with the command line you can do this:
 
 `git submodule init` to initialize your local configuration file
 `git submodule update` to fetch all the data from that project and check out the appropriate commit listed in your superproject:
