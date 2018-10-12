@@ -44,6 +44,14 @@ If you've already downloaded a repo and want to fetch submodules, if you're usin
 
 [https://git-scm.com/book/en/v2/Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
+## Troubleshooting
+
+### Errors
+
+#### Notice: ob_flush(): failed to flush buffer
+
+Try updating to a newer version of PHP.
+
 ## About this App
 
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
