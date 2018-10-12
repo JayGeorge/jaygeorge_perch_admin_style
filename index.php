@@ -5,8 +5,8 @@
     $API  = new PerchAPI(1.0, 'jaygeorge_perch_admin_style');
 
     # include your class files
-    include('jaygeorge_perch_admin_styleSync_Things.class.php');
-    include('jaygeorge_perch_admin_styleSync_Thing.class.php');
+    include('jaygeorge_perch_admin_style_Things.class.php');
+    include('jaygeorge_perch_admin_style_Thing.class.php');
     
     # Grab an instance of the Lang class for translations
     $Lang = $API->get('Lang');
