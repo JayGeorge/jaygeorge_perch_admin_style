@@ -23,6 +23,7 @@
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- PERCH
     =================================================== */
     --colour-perch-border-grey: #e9eaea;
+    --colour-perch-button-secondary: #f9f9f9;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main: #222;
@@ -39,9 +40,6 @@
     --box-shadow-item-left: -10px 0 9px -8px rgba(0, 0, 0, 0.1);
     --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
     --box-shadow-b-light: 0 10px 9px -8px rgba(0, 0, 0, 0.05);
-    /* GROUP VARIABLES -- DECORATION -- TEXT
-    =================================================== */
-    --font-family-main: sans-serif;
     /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     --font-family-main-weight-normal: 400;

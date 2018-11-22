@@ -8,6 +8,9 @@ body {
 .title-panel h1 {
     font-family: var(--font-family-main);
     font-weight: var(--font-family-main-weight-strong);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2em;
 }
 
 
@@ -79,6 +82,10 @@ a.primary:visited,
     /* 'overflow' value must be different from 'visible' */
     overflow: hidden;
     text-overflow: ellipsis;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--font-family-main-weight-strong);
+    font-size: 0.8em;
     /* Optional */
      max-width: 100%; 
     /* -- */
@@ -89,6 +96,9 @@ a.primary:visited,
 .sidebar-back .icon {
     margin-right: var(--rhythm-s-0);
     fill: white;
+    /* Decrease */
+    width: 10px;
+    height: 10px;
 }
 
 .sidebar-back a:hover,
@@ -198,6 +208,22 @@ header .sidebar-back a:focus {
         padding-left: var(--rhythm-s);
     }
 }
+/* GROUP MOLECULES / BARS / TOP / RHYTHM
+=================================================== */
+.utilnav a,
+.utilnav li .logout,
+.utilnav .logout,
+.utilnav a.logout:focus {
+    padding-bottom: var(--rhythm-l);
+    padding-top: var(--rhythm-l);
+}
+
+.utilnav .logout {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.04);
+    color: rgba(0,0,0,0.4);
+}
 /* GROUP MOLECULES / BARS / TOP / DECORATION
 =================================================== */
 /* --mq-after-mobile-layout */
@@ -216,12 +242,28 @@ header .sidebar-back a:focus {
         background-image: url(/perch/addons/plugins/ui/logo.svg);
     }
 }
+
+
+
+
 /* GROUP MOLECULES / BARS / SIDEBAR
 =================================================== */
 /* GROUP MOLECULES / BARS / SIDEBAR / RHYTHM
 =================================================== */
 .sidebar {
     padding-top: var(--rhythm-s-1);
+}
+
+.sidebar h2,
+.sidebar h3 {
+    /* Decrease */
+    margin-bottom: var(--rhythm-s-1);
+}
+
+.submenu-container > *,
+/* Sidebar (level up from current menu) e.g. click 'My Site' */
+.appmenu-container .appmenu {
+    margin-bottom: 4rem;
 }
 
 .show-sidebar .sidebar {
@@ -252,6 +294,15 @@ header .sidebar-back {
 .sidebar h2,
 .sidebar h3 {
     color: black;
+}
+
+.sidebar h2,
+.sidebar h3 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--font-family-main-weight-strong);
+    opacity: 0.5;
 }
 
 .sidebar-back {
@@ -286,6 +337,7 @@ header .sidebar-back {
 .sidebar li span {
     /* Lighter */
     color: #666;
+    font-weight: var(--font-family-main-weight-normal);
 }
 
 /* Not sidebar, because .selected is not available in the ul.appmenu, making it confusing when you a 'selected' state in some menus, and others not */
@@ -297,6 +349,12 @@ header .sidebar-back {
 .sidebar .selected {
     border-left: 4px solid var(--colour-main);
     font-weight: var(--font-family-main-weight-strong);
+}
+
+/* .selected is not available in the ul.appmenu, so a sidebar decoration should not suggest so. */
+.appmenu li a {
+    padding-left: 0;
+    font-size: 0.9em;
 }
 /* GROUP MOLECULES / BARS / SIDEBAR / MOBILE
 =================================================== */
@@ -393,13 +451,28 @@ header .sidebar-back {
 
 /* Top Bar */
 .smartbar li a,
-.smartbar li button,
+.smartbar li button {
+    /* Increase */
+    padding-bottom: var(--rhythm-s);
+    padding-top: var(--rhythm-s);
+}
+
 /* Rows */
 table th,
 table td {
     /* Increase */
-    padding-bottom: var(--rhythm-s);
-    padding-top: var(--rhythm-s);
+    padding-bottom: var(--rhythm-s-1);
+    padding-top: var(--rhythm-s-1);
+}
+
+/* e.g. blog 'post' heading (first column) */
+table th:first-child a {
+    margin-left: var(--rhythm-s-0);
+}
+
+/* Title column header of 'Pages' */
+.kindofabigdeal {
+    padding-left: var(--rhythm-s);
 }
 
 .smartbar li .breadcrumb.tab-active a:last-child {
@@ -681,4 +754,18 @@ textarea.input-simple,
 .compat-container strong,
 .compat-container strong a {
     color: #00a8ef;
+}
+
+
+
+
+/* GROUP ORGANISMS / ADMIN WRITING
+=================================================== */
+textarea {
+    font-family: var(--font-family-textarea);
+}
+
+textarea.input-simple {
+    /* Increase */
+    font-size: 1em;
 }
