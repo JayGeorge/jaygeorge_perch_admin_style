@@ -306,7 +306,8 @@ header .sidebar-back a:focus {
 
 .sidebar .badge {
     /* e.g. Blog Comments number */
-    background: var(--colour-main);
+    background: var(--colour-perch-button-secondary);
+    color: var(--colour-main);
 }
 
 .sidebar h3 {
