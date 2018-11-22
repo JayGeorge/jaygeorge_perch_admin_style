@@ -7,11 +7,47 @@ body {
     /* GROUP VARIABLES -- DECORATION -- TEXT
     =================================================== */
     /*--font-family-main: source-sans-pro, sans-serif;*/
-    /*--font-family-textarea: some-font, sans-serif;*/
+    /*--font-family-textarea: some-font, serif;*/
     /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     /*--font-family-main-weight-normal: 400;*/
     /*--font-family-main-weight-strong: 600;*/
 }
+
+/* Some theme options - delete these if you don't want to use them */
+/* GROUP THEME / LIGHT BUTTONS
+=================================================== */
+/* Notes...
+
+    This works well if you're going for a minimal look
+
+*/
+/*.button.to-the-top:hover,
+.title-panel .button:hover,
+.title-panel .button-icon:hover,
+.title-panel .button-icon.active {
+    color: black;
+}
+
+.button.to-the-top.button-icon:hover svg,
+.title-panel .button:hover svg,
+.title-panel .button.active svg {
+    fill: black;
+}
+
+.sidebar-back a:hover,
+.sidebar-back a:focus {
+    border: 1px solid var(--colour-perch-border-grey);
+}
+
+.sidebar-back .back {
+    background: var(--colour-perch-button-secondary);
+    border: 1px solid var(--colour-perch-border-grey);
+    color: var(--colour-black-off);
+}
+
+.sidebar-back .icon {
+    fill: var(--colour-black-off);
+}*/
 
 /* Add any brand specific CSS here */
