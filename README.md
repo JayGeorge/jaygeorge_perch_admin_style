@@ -72,15 +72,15 @@ Here is an example of the minimal amount of CSS you may need to add:
 ``` CSS
 /* Redefine/override any CSS variables here */
 body {
-    /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
+    /* GROUP VARIABLES -- COLOURS -- THEME
     =================================================== */
     --colour-main: #00a9eb;
     --colour-main-hover: #0084b7;
-    /* GROUP VARIABLES -- DECORATION -- TEXT
+    /* GROUP ATOMS -- DECORATION -- TEXT
     =================================================== */
     --font-family-main: tablet-gothic, sans-serif;
-    --font-family-headline: abril-titling, serif;
-    /* GROUP VARIABLES -- DECORATION -- TEXT -- WEIGHTS
+    --font-family-headline: kepler-std-display, serif;
+    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
     =================================================== */
     --font-family-main-weight-normal: 400;
     --font-family-main-weight-strong: 600;
@@ -94,11 +94,16 @@ body {
     font-family: var(--font-family-headline);
     font-weight: var(--font-family-headline-strong);
 }
+
+.sidebar-back .back {
+    font-size: 0.8em;
+    letter-spacing: 3px;
+}
 ```
 
 Takes the default App style from this:
-![Base Style](screenshots/example-with-base-app-styling.jpg "")
+![Base Style](screenshots/example-with-base-app-styling.png "")
 
 To this:
-![Styled](screenshots/example-with-branding.jpg "")
+![Styled](screenshots/example-with-branding.png "")
 
