@@ -270,11 +270,6 @@ header .sidebar-back a:focus {
     padding-top: 3.5em;
 }
 
-header .sidebar-back {
-    /* Decrease */
-    margin-bottom: var(--rhythm-l);
-}
-
 .sidebar-back {
     /* Increase */
     margin-bottom: var(--rhythm-l);
