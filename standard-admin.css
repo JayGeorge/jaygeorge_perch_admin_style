@@ -169,8 +169,8 @@ header .sidebar-back a:focus {
 .utilnav li .logout,
 .utilnav .logout,
 .utilnav a.logout:focus {
-    padding-bottom: var(--rhythm-m);
-    padding-top: var(--rhythm-m);
+    padding-bottom: var(--rhythm-l);
+    padding-top: var(--rhythm-l);
     border-radius: 0;
 }
 /* GROUP MOLECULES / BARS / TOP / RHYTHM
@@ -208,14 +208,14 @@ header .sidebar-back a:focus {
         padding-left: var(--rhythm-s);
     }
 }
-/* GROUP MOLECULES / BARS / TOP / RHYTHM
+/* GROUP MOLECULES / BARS / TOP / DECORATION
 =================================================== */
-.utilnav a,
-.utilnav li .logout,
-.utilnav .logout,
-.utilnav a.logout:focus {
-    padding-bottom: var(--rhythm-l);
-    padding-top: var(--rhythm-l);
+.utilnav {
+    font-weight: var(--font-family-main-weight-strong);
+}
+
+.utilnav a span {
+    opacity: 0.6;
 }
 
 .utilnav .logout {
@@ -224,8 +224,7 @@ header .sidebar-back a:focus {
     background: rgba(0, 0, 0, 0.04);
     color: rgba(0,0,0,0.4);
 }
-/* GROUP MOLECULES / BARS / TOP / DECORATION
-=================================================== */
+
 /* --mq-after-mobile-layout */
 @media (min-width: 550px) {
     .topbar.runway.user_theme_dark.nobrand,
