@@ -1,4 +1,9 @@
 :root {
+    /* Notes...
+
+    If you wish to modify any variables you should override them in your `custom-admin.css` file instead. Do not change them here because they'll be overwritten if you update.
+
+    */
     /* GROUP VARIABLES -- RHYTHM
     =================================================== */
     --rhythm-s-0-0: 0.4rem;
@@ -31,7 +36,7 @@
     --colour-grey: #ccc;
     --colour-select: #00bb77;
     --colour-select-rgb: 0, 187, 119;
-    /* Useful alternative if your colour scheme uses greens */
+    /* Useful alternative if your colour scheme uses greens. Paste the below into your `custom-admin.css` (do not uncomment here because it'll be overwritten if you update) */
     /* --colour-success: dodgerblue; */
     --colour-success: #18bb9c;
     --colour-fail: #e3315b;
