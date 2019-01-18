@@ -620,10 +620,32 @@ textarea.input-simple,
 .inline-help + .form-entry {
     padding-top: var(--rhythm-s);
 }
+/* GROUP ORGANISMS / EDITOR / UPLOADS { / IMAGE UPLOADS}
+=================================================== */
+.asset-badge {
+    /* Add */
+    padding-bottom: var(--rhythm-s-0-0);
+}
 
 .asset-badge .icon-upload {
     /* Decrease */
     width: 40px;
+}
+
+.asset-badge-thumb.thumbless {
+    border-width: 3px;
+    border-radius: 5px;
+}
+/* GROUP ORGANISMS / EDITOR / DELETE BUTTONS
+=================================================== */
+.button.action-alert,
+.button.button-small.action-alert {
+    background-color: var(--colour-fail);
+}
+
+.button.action-alert:hover,
+.button.button-small.action-alert:hover {
+    background-color: var(--colour-fail-hover);
 }
 /* GROUP ORGANISMS / EDITOR / TAB e.g. REGION OPTIONS
 =================================================== */

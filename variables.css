@@ -40,6 +40,7 @@
     /* --colour-success: dodgerblue; */
     --colour-success: #18bb9c;
     --colour-fail: #e3315b;
+    --colour-fail-hover: #c32c50;
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
     =================================================== */
     --box-shadow-item: 0px 5px 10px rgba(0,0,0,0.1);
