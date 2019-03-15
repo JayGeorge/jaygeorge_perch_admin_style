@@ -636,6 +636,15 @@ textarea.input-simple,
     border-width: 3px;
     border-radius: 5px;
 }
+
+.asset-badge-meta {
+    padding: var(--rhythm-s-2);
+    padding-top: var(--rhythm-s);
+    border-radius: 5px;
+    margin-left: var(--rhythm-m);
+    background-color: var(--colour-perch-background-grey-light);
+    border: 1px solid var(--colour-perch-border-grey);
+}
 /* GROUP ORGANISMS / EDITOR / DELETE BUTTONS
 =================================================== */
 .button.action-alert,
