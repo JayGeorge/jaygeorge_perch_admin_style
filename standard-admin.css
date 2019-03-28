@@ -436,6 +436,46 @@ header .sidebar-back a:focus {
 
 
 
+/* GROUP MOLECULES / SEARCH RESULTS / LAYOUT
+=================================================== */
+.search-results li {
+    position: relative;
+}
+
+/* ul*/.search-results .source {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* GROUP MOLECULES / SEARCH RESULTS
+=================================================== */
+/* ul*/.search-results li {
+    padding: var(--rhythm-s-2);
+    margin-bottom: var(--rhythm-l-2);
+    margin-top: var(--rhythm-l-2);
+    border-radius: 5px;
+    background-color: var(--colour-perch-background-grey-light);
+    border: 1px solid var(--colour-perch-border-grey);
+}
+
+/* ul*/.search-results h2 {
+    /* More prominent */
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* ul*/.search-results .source {
+    padding: var(--rhythm-s);
+    background: var(--colour-perch-border-grey);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: var(--font-family-main-weight-strong);
+    font-size: 0.9em;
+}
+
+
+
+
 /* GROUP ORGANISMS / SMART BAR & TABLES
 =================================================== */
 /* e.g. Pages > Collections */
