@@ -550,8 +550,10 @@ table tr {
 table th,
 thead tr:hover,
 /* e.g. Regions > Main Heading */
-.divider {
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#fbfbfb 300%);
+.divider,
+/* Organisms > Editor > Field Groups (Cross Pollinated) */
+.field-group-label {
+    background: var(--colour-gradient-white);
 }
 
 /* --mq-before-perch-desktop-layout */
@@ -594,7 +596,9 @@ thead tr:hover,
 
 /* GROUP ORGANISMS / EDITOR
 =================================================== */
-.divider {
+.divider,
+/* Organisms > Editor > Field Groups (Cross Pollinated) */
+.field-group-label {
     padding-bottom: var(--rhythm-s);
     padding-top: var(--rhythm-s);
     font-weight: var(--font-family-main-weight-strong);
@@ -602,6 +606,8 @@ thead tr:hover,
 }
 
 .field-wrap + .divider,
+/* Organisms > Editor > Field Groups (Cross Pollinated) */
+.field-wrap + .field-group,
 .divider-collapse-zone + .divider {
     /* e.g. Settings */
     margin-top: var(--rhythm-l);
@@ -717,7 +723,9 @@ textarea.input-simple,
 }
 /* GROUP ORGANISMS / EDITOR / BLOCKS
 =================================================== */
-.block-item {
+.block-item,
+/* Organisms > Editor > Field Groups (Cross Pollinated) */
+.field-group {
     padding-bottom: var(--rhythm-s);
     margin-bottom: var(--rhythm-l);
     border: 1px solid var(--colour-grey);
@@ -727,7 +735,9 @@ textarea.input-simple,
     margin-left: 24px;
 }
 
-.block-item .divider {
+.block-item .divider,
+/* Organisms > Editor > Field Groups (Cross Pollinated) */
+.field-group-label {
     border-top: 0;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -777,6 +787,23 @@ textarea.input-simple,
 .repeated-fields {
     /* Increase */
     padding-top: var(--rhythm-s-0);
+}
+/* GROUP ORGANISMS / EDITOR / FIELD GROUPS (CROSS POLLINATED)
+=================================================== */
+.field-group {
+    padding-top: 0;
+    background-color: white;
+    /* Change box-shadow to something ligther because unlike blocks we don't want it to look like the box is draggable */
+    box-shadow: var(--box-shadow-item-light);
+}
+
+.field-group-label {
+    margin: 0 24px 12px 24px;
+    color: var(--colour-perch-grey-dark);
+}
+
+.field-group .divider-toggle {
+    margin-right: var(--rhythm-s);
 }
 
 

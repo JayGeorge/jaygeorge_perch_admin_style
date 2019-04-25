@@ -30,6 +30,7 @@
     --colour-perch-border-grey: #e9eaea;
     --colour-perch-button-secondary: #f9f9f9;
     --colour-perch-background-grey-light: #fcfcfc;
+    --colour-perch-grey-dark: #4d4d4d;
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main: #222;
@@ -42,9 +43,13 @@
     --colour-success: #18bb9c;
     --colour-fail: #e3315b;
     --colour-fail-hover: #c32c50;
+    /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME -- GRADIENTS
+    =================================================== */
+    --colour-gradient-white: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#fbfbfb 300%);
     /* GROUP VARIABLES -- DECORATION -- SEPARATORS -- BOX SHADOWS - ordered from light to dark variants
     =================================================== */
     --box-shadow-item: 0px 5px 10px rgba(0,0,0,0.1);
+    --box-shadow-item-light: 0 5px 10px rgba(0, 0, 0, 0.05);
     --box-shadow-item-left: -10px 0 9px -8px rgba(0, 0, 0, 0.1);
     --box-shadow-b: 0 10px 9px -8px rgba(0, 0, 0, 0.2);
     --box-shadow-b-light: 0 10px 9px -8px rgba(0, 0, 0, 0.05);
