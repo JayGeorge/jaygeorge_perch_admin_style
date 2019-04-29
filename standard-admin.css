@@ -791,10 +791,27 @@ textarea.input-simple,
 /* GROUP ORGANISMS / EDITOR / FIELD GROUPS (CROSS POLLINATED)
 =================================================== */
 .field-group {
-    padding-top: 0;
     background-color: white;
     /* Change box-shadow to something ligther because unlike blocks we don't want it to look like the box is draggable */
     box-shadow: var(--box-shadow-item-light);
+}
+
+.field-group,
+.field-group.closed {
+    padding-top: 0;
+}
+
+/* GROUP ORGANISMS / EDITOR / FIELD GROUPS / CLOSED
+=================================================== */
+.field-group.closed .summary {
+    /* Prevent dt elements clashing into each other (issue with default Perch admin CSS) */
+    display: grid;
+}
+
+.field-group-closed .summary dt,
+.field-group-closed .summary dd, {
+    /* Put some space in between summary elements */
+    margin-bottom: var(--rhythm-s-0);
 }
 
 .field-group-label {
