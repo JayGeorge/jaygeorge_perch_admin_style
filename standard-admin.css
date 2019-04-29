@@ -809,7 +809,7 @@ textarea.input-simple,
 }
 
 .field-group.closed .summary dt,
-.field-group.closed .summary dd, {
+.field-group.closed .summary dd {
     /* Put some space in between summary elements */
     margin-bottom: var(--rhythm-s-0);
 }
