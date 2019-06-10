@@ -620,6 +620,11 @@ thead tr:hover,
     border-top: 0;
 }
 
+/* Override e.g. if 'item 2' divider */
+.edititem + .edititem .divider {
+    border: 1px solid var(--colour-perch-border-grey);
+}
+
 .form-simple label,
 .form-simple .fieldset-inner .legend-wrap,
 .repeater-heading {
