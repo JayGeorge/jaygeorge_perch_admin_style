@@ -1,0 +1,57 @@
+/* Notes...
+
+    - This file contains extra selectors that are usfel for further styling, such as editor plugins
+
+*/
+
+
+
+
+/* GROUP PLUGINS / EDITORS / REDACTOR / UTILITY
+=================================================== */
+/* Hide h1 since this is handled by the page title or a different region */
+.redactor-dropdown-h1,
+/* Hide headings below h3 since they probably should not be used within the content area */
+.redactor-dropdown-h4,
+.redactor-dropdown-h5,
+.redactor-dropdown-h6 {
+    display: none!important;
+}
+/* GROUP PLUGINS / EDITORS / REDACTOR / DECORATION
+=================================================== */
+/* Change button hover colour */
+body .redactor-toolbar li a:hover {
+    background-color: var(--colour-something);
+}
+
+/* Boost the editor size so it matches the size of the site front-end */
+body .redactor-styles {
+    /* Increase */
+    /* font-size: 1.4em; */
+    /* font-family: "Fira Sans", sans-serif; */
+}
+
+/* Example of limiting reading width of content */
+body .redactor-styles * {
+    max-width: var(--max-width-reading);
+    /* START CENTER HORIZONTAL - METHOD 2
+    ------------------------------------------------ */
+    margin-left: auto!important;
+    margin-right: auto!important;
+    /* END CENTER HORIZONTAL - METHOD 2
+    ---------------------------------------------- */
+}
+
+body .redactor-styles p {
+    /* Increase */
+    /*line-height: 1.6;*/
+}
+
+body .redactor-styles a {
+    /*color: var(--colour-something);*/
+}
+/* GROUP PLUGINS / EDITORS / REDACTOR / EDITOR AREA
+=================================================== */
+/* GROUP PLUGINS / EDITORS / REDACTOR / EDITOR AREA / ATOMS / ELEMENTS / HEADINGS
+=================================================== */
+/*body .redactor-styles h2, etc.*/
