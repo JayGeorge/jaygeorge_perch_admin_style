@@ -42,6 +42,11 @@ body .redactor-styles {
     /* font-family: "Fira Sans", sans-serif; */
 }
 
+body .redactor-focus.redactor-styles-on, .redactor-focus:focus.redactor-styles-on {
+    /* Optionally effectively get rid of border colour 'focus' effect when cursor is inside editor */
+    border-color: rgba(0,0,0,.075)!important;
+}
+
 /* Example of limiting reading width of content */
 body .redactor-styles * {
     max-width: var(--max-width-reading);
