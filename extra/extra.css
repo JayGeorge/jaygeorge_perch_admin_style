@@ -17,10 +17,21 @@
 .redactor-dropdown-h6 {
     display: none!important;
 }
+/* GROUP PLUGINS / EDITORS / REDACTOR / FIXES
+=================================================== */
+/* Fix for hover arrow below Redactor buttons */
+body .re-button-tooltip:after {
+    border-top: transparent;
+}
+
+body .redactor-toolbar a.re-button-icon {
+    /* Match same padding as on Redactor site. Not sure why Perch reduced this */
+    padding: 9px 15px 6px 15px;
+}
 /* GROUP PLUGINS / EDITORS / REDACTOR / DECORATION
 =================================================== */
 /* Change button hover colour */
-body .redactor-toolbar li a:hover {
+body .redactor-toolbar a:hover {
     background-color: var(--colour-something);
 }
 
