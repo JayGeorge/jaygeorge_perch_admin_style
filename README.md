@@ -17,7 +17,6 @@ This App is carefully architected so you get good default styles, and branding f
 
 Here is an example of the minimal amount of CSS you may need to add:
 
-&nbsp;
 ``` CSS
 /* Redefine/override any CSS variables here */
 body {
