@@ -63,7 +63,7 @@ The app also contains:
 - Hints for styling the Redactor Editor (see `/extra/extra.css` for instructions)
 
 Here is an example of a styled Redactor textarea:
-![Styled](screenshots/example-redactor.png "")
+![Styled](screenshots/example-editor-redactor.png "")
 
 ## Installation
 
