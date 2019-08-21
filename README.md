@@ -1,4 +1,69 @@
-# Instructions
+# Perch Admin Style
+
+[Jump to installation instructions](#installation).
+
+## About this App
+
+This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
+
+To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do not change the values of any file in the plugin folder—instead use your new /perch/addons/plugins/ui/custom-admin.css to style the admin.
+
+### Why wouldn't you just follow the default [UI Customisation documentation](https://docs.grabaperch.com/api/custom-ui/)?
+
+- The current default implementation does not allow you to add CSS to the `<head/>` when the admin loads. Instead, any modifications are loaded after the closing `<body/>` tag. This results in a "flicker" as the stylesheet is output after the body. While this may not be an issue for small CSS modifications, if you load even a moderate amount of CSS, traversing the admin quickly becomes distracting.
+- The Perch API, which is available to Apps, allows us to add code directly to the `<head/>`. This means we can also add things like a favicon and load an external stylesheet e.g. Typekit or Google Fonts
+
+This App is carefully architected so you get good default styles, and branding for different clients is just a case of adding some CSS variables to the `custom-admin` starter CSS file.
+
+Here is an example of the minimal amount of CSS you may need to add:
+
+``` CSS
+/* Redefine/override any CSS variables here */
+body {
+    /* GROUP VARIABLES -- COLOURS -- THEME
+    =================================================== */
+    --colour-main: #00a9eb;
+    --colour-main-hover: #0084b7;
+    /* GROUP ATOMS -- DECORATION -- TEXT
+    =================================================== */
+    --font-family-main: tablet-gothic, sans-serif;
+    --font-family-headline: kepler-std-display, serif;
+    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
+    =================================================== */
+    --font-family-main-weight-normal: 400;
+    --font-family-main-weight-strong: 600;
+    --font-family-headline-strong: 400;
+}
+
+/* Add any brand specific CSS here */
+/* GROUP MOLECULES / BARS / TOP / DECORATION
+=================================================== */
+.title-panel h1 {
+    font-family: var(--font-family-headline);
+    font-weight: var(--font-family-headline-strong);
+}
+
+.sidebar-back .back {
+    font-size: 0.8em;
+    letter-spacing: 3px;
+}
+```
+
+Takes the default App style from this:
+![Base Style](screenshots/example-with-base-app-styling.png "")
+
+To this:
+![Styled](screenshots/example-with-branding.png "")
+
+### Extra Customisation
+
+The app also contains:
+
+- Login CSS which you can customise (see `/_config.inc` for instructions)
+- Hints for styling the Redactor Editor (see `/extra/extra.css` for instructions)
+
+Here is an example of a styled Redactor textarea:
+![Styled](screenshots/example-redactor.png "")
 
 ## Installation
 
@@ -51,59 +116,3 @@ If you've already downloaded a repo and want to fetch submodules, if you're usin
 #### Notice: ob_flush(): failed to flush buffer
 
 Try updating to a newer version of PHP.
-
-## About this App
-
-This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
-
-To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do not change the values of any file in the plugin folder—instead use your new /perch/addons/plugins/ui/custom-admin.css to style the admin.
-
-### Why you wouldn't just follow the default [UI Customisation documentation](https://docs.grabaperch.com/api/custom-ui/)
-
-- The current default implementation does not allow you to add CSS to the `<head/>` when the admin loads. Instead, any modifications are loaded after the closing `<body/>` tag. This results in a "flicker" as the stylesheet is output after the body. While this may not be an issue for small CSS modifications, if you load even a moderate amount of CSS, traversing the admin quickly becomes distracting.
-- The Perch API, which is available to Apps, allows us to add code directly to the `<head/>`. This means we can also add things like a favicon and load an external stylesheet e.g. Typekit or Google Fonts
-
-#### Speed
-
-This App is carefully architected so you get good default styles, and branding for different clients is just a case of adding some CSS variables to the `custom-admin` starter CSS file.
-
-Here is an example of the minimal amount of CSS you may need to add:
-
-``` CSS
-/* Redefine/override any CSS variables here */
-body {
-    /* GROUP VARIABLES -- COLOURS -- THEME
-    =================================================== */
-    --colour-main: #00a9eb;
-    --colour-main-hover: #0084b7;
-    /* GROUP ATOMS -- DECORATION -- TEXT
-    =================================================== */
-    --font-family-main: tablet-gothic, sans-serif;
-    --font-family-headline: kepler-std-display, serif;
-    /* GROUP ATOMS -- DECORATION -- TEXT -- WEIGHTS
-    =================================================== */
-    --font-family-main-weight-normal: 400;
-    --font-family-main-weight-strong: 600;
-    --font-family-headline-strong: 400;
-}
-
-/* Add any brand specific CSS here */
-/* GROUP MOLECULES / BARS / TOP / DECORATION
-=================================================== */
-.title-panel h1 {
-    font-family: var(--font-family-headline);
-    font-weight: var(--font-family-headline-strong);
-}
-
-.sidebar-back .back {
-    font-size: 0.8em;
-    letter-spacing: 3px;
-}
-```
-
-Takes the default App style from this:
-![Base Style](screenshots/example-with-base-app-styling.png "")
-
-To this:
-![Styled](screenshots/example-with-branding.png "")
-
