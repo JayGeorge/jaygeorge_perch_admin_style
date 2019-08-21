@@ -6,7 +6,7 @@
 
 This is a very simple App, which allows you to style the admin interface for different clients, with some base styling defaults.
 
-To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do not change the values of any file in the plugin folder—instead use your new /perch/addons/plugins/ui/custom-admin.css to style the admin.
+To future proof as much as possible this app tries not to touch any layout; only padding and colouring adjustments. Do not change the values of any file in the plugin folder—instead use your new `/perch/addons/plugins/ui/custom-admin.css` to style the admin.
 
 ### Why wouldn't you just follow the default [UI Customisation documentation](https://docs.grabaperch.com/api/custom-ui/)?
 
@@ -17,6 +17,7 @@ This App is carefully architected so you get good default styles, and branding f
 
 Here is an example of the minimal amount of CSS you may need to add:
 
+&nbsp;
 ``` CSS
 /* Redefine/override any CSS variables here */
 body {
