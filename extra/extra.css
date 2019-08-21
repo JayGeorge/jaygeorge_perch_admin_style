@@ -14,7 +14,10 @@
 /* Hide headings below h3 since they probably should not be used within the content area */
 .redactor-dropdown-h4,
 .redactor-dropdown-h5,
-.redactor-dropdown-h6 {
+.redactor-dropdown-h6,
+/* Hide some other stuff */
+.redactor-dropdown-item-blockquote,
+.redactor-dropdown-item-pre {
     display: none!important;
 }
 /* GROUP PLUGINS / EDITORS / REDACTOR / FIXES
@@ -31,8 +34,9 @@ body .redactor-toolbar a.re-button-icon {
 /* GROUP PLUGINS / EDITORS / REDACTOR / DECORATION
 =================================================== */
 /* Change button hover colour */
-body .redactor-toolbar a:hover {
-    background-color: var(--colour-something);
+body .redactor-toolbar a:hover,
+body .redactor-dropdown a:hover {
+    background-color: var(--colour-something)!important;
 }
 
 /* Boost the editor size so it matches the size of the site front-end */
@@ -71,3 +75,4 @@ body .redactor-styles a {
 /* GROUP PLUGINS / EDITORS / REDACTOR / EDITOR AREA / ATOMS / ELEMENTS / HEADINGS
 =================================================== */
 /*body .redactor-styles h2, etc.*/
+/*body .redactor-dropdown-item-h2 etc*/
