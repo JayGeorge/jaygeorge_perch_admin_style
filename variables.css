@@ -36,6 +36,7 @@
     --colour-main: #222;
     --colour-main-hover: #000;
     --colour-grey: #ccc;
+    --colour-text: #333;
     --colour-select: #00bb77;
     --colour-select-rgb: 0, 187, 119;
     /* Useful alternative if your colour scheme uses greens. Paste the below into your `custom-admin.css` (do not uncomment here because it'll be overwritten if you update) */

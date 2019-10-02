@@ -11,11 +11,11 @@
 /* GROUP PLUGINS / EDITORS / REDACTOR / UTILITY
 =================================================== */
 /* Hide h1 since this is handled by the page title or a different region */
-.redactor-dropdown-h1,
+.redactor-dropdown-item-h1,
 /* Hide headings below h3 since they probably should not be used within the content area */
-.redactor-dropdown-h4,
-.redactor-dropdown-h5,
-.redactor-dropdown-h6,
+.redactor-dropdown-item-h4,
+.redactor-dropdown-item-h5,
+.redactor-dropdown-item-h6,
 /* Hide some other stuff */
 .redactor-dropdown-item-blockquote,
 .redactor-dropdown-item-pre {
