@@ -889,3 +889,10 @@ body .redactor-styles {
     /* Increase */
     font-size: 1em;
 }
+
+/* GROUP ORGANISMS / ADMIN WRITING / REDACTOR SPECIFIC
+=================================================== */
+html body .form-entry .editor-wrap div.redactor-styles {
+    /* Increase */
+    padding: 1.5em;
+}
