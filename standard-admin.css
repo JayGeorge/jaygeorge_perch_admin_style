@@ -878,14 +878,10 @@ textarea.input-simple,
 /* GROUP ORGANISMS / ADMIN WRITING
 =================================================== */
 textarea,
+textarea.input-simple,
 body .redactor-styles {
     font-family: var(--font-family-textarea);
     color: var(--colour-text);
-}
-
-textarea.input-simple,
-/* Increase from default 93% */
-body .redactor-styles {
     /* Increase */
     font-size: 1em;
 }
