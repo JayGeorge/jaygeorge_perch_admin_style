@@ -12,10 +12,12 @@
     =================================================== */
     // Make sure files aren't cached
     $variables_version = '/variables.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/variables.css');
-    $standard_admin_version = '/standard-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/standard-admin.css');
+    $standard_admin_css_version = '/standard-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/standard-admin.css');
+    $standard_admin_js_version = '/standard-admin.js?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . $API->app_path() . '/standard-admin.js');
     // We need to separate variables.css out so that the login.css can make use of it (which is loaded outside the app, so it can be available before the admin is loaded)
     $Perch->add_css($API->app_path() . $variables_version);
-    $Perch->add_css($API->app_path() . $standard_admin_version);
+    $Perch->add_css($API->app_path() . $standard_admin_css_version);
+    $Perch->add_javascript($API->app_path() . $standard_admin_js_version);
 
     /* GROUP LOAD CUSTOM ADMIN CSS
     =================================================== */

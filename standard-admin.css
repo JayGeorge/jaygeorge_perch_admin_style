@@ -38,6 +38,42 @@ a.primary:visited,
 
 
 
+/* GROUP ATOMS / SKIP LINKS
+=================================================== */
+/* a*/.c-skip-to-content {
+    /* Screen Reader Text */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    position: absolute!important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    /* -- */
+    outline: none;
+    /* Looks better on Skip to Content */
+    text-underline-position: auto;
+    padding: var(--rhythm-s-1) var(--rhythm-m);
+    background: black;
+    color: white;
+    border: 3px solid var(--colour-focus);
+    font-size: var(--font-size-s-0);
+}
+
+/* a*/.c-skip-to-content:focus {
+    /* Screen Reader Focus State */
+    clip: auto!important;
+
+    z-index: 100000; /* Above any toolbars. */
+    display: block;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+
+
+
 /* GROUP ATOMS / BUTTONS
 =================================================== */
 /* e.g. Collections > Add another item */
