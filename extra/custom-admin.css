@@ -23,7 +23,11 @@ body {
     This works well if you're going for a minimal look
 
 */
-/*.button.to-the-top:hover,
+/*.c-skip-to-content {
+    --colour-focus: yellow;
+}
+
+.button.to-the-top:hover,
 .title-panel .button:hover,
 .title-panel .button-icon:hover,
 .title-panel .button-icon.active {
