@@ -40,8 +40,8 @@ a.primary:visited,
 
 /* GROUP ATOMS / SKIP LINKS
 =================================================== */
-/* body qualifier to override default :focus styles in custom-admin.css */
-body /* a*/.c-skip-to-content {
+/* html qualifier to override default :focus styles in custom-admin.css */
+html /* a*/.c-skip-to-content {
     /* Screen Reader Text */
     clip: rect(1px, 1px, 1px, 1px);
 
@@ -60,8 +60,8 @@ body /* a*/.c-skip-to-content {
     font-size: var(--font-size-s-0);
 }
 
-/* body qualifier to override default :focus styles in custom-admin.css */
-body /* a*/.c-skip-to-content:focus {
+/* html qualifier to override default :focus styles in custom-admin.css */
+html /* a*/.c-skip-to-content:focus {
     /* Screen Reader Focus State */
     clip: auto!important;
 
