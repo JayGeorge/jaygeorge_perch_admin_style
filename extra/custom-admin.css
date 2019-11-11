@@ -20,13 +20,7 @@ body {
 
 /* GROUP ATOMS / DECORATION / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
 =================================================== */
-/* Sorting e.g. 'All', 'New', 'By Region Type', 'Reorder Pages' */
-.smartbar a:focus,
-/* e.g. main table of regions */
-table a:focus,
-/* Side navigation */
-.subnav a:focus,
-.appmenu a:focus {
+a:focus {
     background: rgba(var(--colour-main-rgb),0.3);
     outline: 3px solid rgba(var(--colour-main-rgb),0.3);
 }
