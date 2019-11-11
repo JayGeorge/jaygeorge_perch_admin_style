@@ -3,6 +3,7 @@ body {
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME
     =================================================== */
     --colour-main: #222;
+    --colour-main-rgb: 34, 34, 34;
     --colour-text: #333;
     --colour-main-hover: #000;
     /* GROUP VARIABLES -- DECORATION -- TEXT
@@ -16,6 +17,27 @@ body {
 }
 
 /* Some theme options - delete these if you don't want to use them */
+
+/* GROUP ATOMS / DECORATION / TEXT / LINK STYLES {/ LINKS} / ACCESSIBILITY / FOCUS
+=================================================== */
+/* Sorting e.g. 'All', 'New', 'By Region Type', 'Reorder Pages' */
+.smartbar a:focus,
+/* e.g. main table of regions */
+table a:focus,
+/* Side navigation */
+.subnav a:focus,
+.appmenu a:focus {
+    background: rgba(var(--colour-main-rgb),0.3);
+    outline: 3px solid rgba(var(--colour-main-rgb),0.3);
+}
+/* GROUP ATOMS / BUTTONS / ACCESSIBILITY / FOCUS
+=================================================== */
+.sidebar-back a:focus,
+/* a*/.button:focus {
+    outline: 3px solid var(--colour-main);   
+    background: black;
+}
+
 /* GROUP THEME / LIGHT BUTTONS
 =================================================== */
 /* Notes...
