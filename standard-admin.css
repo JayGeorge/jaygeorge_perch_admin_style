@@ -54,10 +54,6 @@ html /* a*/.c-skip-to-content {
     /* Looks better on Skip to Content */
     text-underline-position: auto;
     padding: var(--rhythm-s-1) var(--rhythm-m);
-    background: black;
-    color: white;
-    border: 3px solid var(--colour-focus);
-    font-size: var(--font-size-s-0);
 }
 
 /* html qualifier to override default :focus styles in custom-admin.css */
@@ -71,6 +67,11 @@ html /* a*/.c-skip-to-content:focus {
     left: 0;
     width: auto;
     height: auto;
+    /* Stick decoration qualities on :focus to override default styling selectors in custom-admin.css */
+    background: black;
+    color: white;
+    border: 3px solid var(--colour-focus);
+    font-size: var(--font-size-s-0);
 }
 
 
