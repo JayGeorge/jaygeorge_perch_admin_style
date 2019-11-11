@@ -28,7 +28,7 @@ a:focus {
 =================================================== */
 .sidebar-back a:focus,
 /* a*/.button:focus {
-    outline: 3px solid var(--colour-main);   
+    outline: 3px solid var(--colour-main);
 }
 
 /* GROUP THEME / LIGHT BUTTONS
