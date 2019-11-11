@@ -29,7 +29,6 @@ a:focus {
 .sidebar-back a:focus,
 /* a*/.button:focus {
     outline: 3px solid var(--colour-main);   
-    background: black;
 }
 
 /* GROUP THEME / LIGHT BUTTONS
