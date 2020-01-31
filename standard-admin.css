@@ -271,14 +271,14 @@ header .sidebar-back a:focus {
     .topbar.runway.user_theme_light.nobrand,
     .topbar.user_theme_dark.nobrand,
     .topbar.user_theme_light.nobrand {
-        background-image: url(/perch/addons/plugins/ui/logo-dark.svg);
+        background-image: url(../../plugins/ui/logo-dark.svg);
         background-size: 50px;
         background-position: center center;
     }
 
     .topbar.runway.user_theme_light.nobrand,
     .topbar.user_theme_light.nobrand {
-        background-image: url(/perch/addons/plugins/ui/logo.svg);
+        background-image: url(../../plugins/ui/logo.svg);
     }
 }
 
@@ -396,7 +396,7 @@ header .sidebar-back a:focus {
 /* --mq-before-mobile-layout */
 @media (max-width: 549px) {
     .sidebar {
-        background-image: url(/perch/addons/plugins/ui/logo.svg);
+        background-image: url(../../plugins/ui/logo.svg);
         background-size: 50px 75px;
         background-position: bottom right 15px;
     }
