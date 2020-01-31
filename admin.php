@@ -18,8 +18,8 @@ $Perch->add_javascript($API->app_path() . '/standard-admin.js?v=' . filemtime(__
 
 /* CACHEBUST AND LOAD CUSTOM ADMIN CSS
 =================================================== */
-if (file_exists(__DIR__ . "/../../addons/plugins/ui/custom-admin.css")) {
-    $Perch->add_css(PERCH_LOGINPATH .'/addons/plugins/ui/custom-admin.css?v=' . filemtime(__DIR__ . '/../../addons/plugins/ui/custom-admin.css'));
+if (file_exists(__DIR__ . "/../../plugins/ui/custom-admin.css")) {
+    $Perch->add_css(PERCH_LOGINPATH .'/addons/plugins/ui/custom-admin.css?v=' . filemtime(__DIR__ . '/../../plugins/ui/custom-admin.css'));
 }
 
 $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val());
@@ -27,6 +27,6 @@ $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external
 /* GROUP LOAD THE FAVICON
 =================================================== */
 
-if (file_exists(__DIR__ . "/../../addons/plugins/ui/favicon.ico")) {
-    $Perch->add_head_content('<link rel="shortcut icon" href="' . PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico?v=' . filemtime(__DIR__ . '/../../addons/plugins/ui/favicon.ico') . '">');
+if (file_exists(__DIR__ . "/../../plugins/ui/favicon.ico")) {
+    $Perch->add_head_content('<link rel="shortcut icon" href="' . PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico?v=' . filemtime(__DIR__ . '/../../plugins/ui/favicon.ico') . '">');
 }
