@@ -23,14 +23,14 @@
     =================================================== */
     // Use the sitepath if it's defined
     if (defined('PERCH_SITEPATH')) {
-        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}" . PERCH_SITEPATH . "perch/addons/plugins/ui/custom-admin.css")) {
-            $custom_admin_version = PERCH_SITEPATH . 'perch/addons/plugins/ui/custom-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/custom-admin.css');
+        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}" . PERCH_SITEPATH . PERCH_LOGINPATH ."/addons/plugins/ui/custom-admin.css")) {
+            $custom_admin_version = PERCH_SITEPATH . PERCH_LOGINPATH .'/addons/plugins/ui/custom-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/'.PERCH_LOGINPATH.'/addons/plugins/ui/custom-admin.css');
             $Perch->add_css($custom_admin_version);
         }
     } else {
         // Otherwise assume its the document root
-        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}/perch/addons/plugins/ui/custom-admin.css")) {
-            $custom_admin_version = '/perch/addons/plugins/ui/custom-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/custom-admin.css');
+        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}".PERCH_LOGINPATH. "/addons/plugins/ui/custom-admin.css")) {
+            $custom_admin_version = PERCH_LOGINPATH . '/addons/plugins/ui/custom-admin.css?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . PERCH_LOGINPATH.'/addons/plugins/ui/custom-admin.css');
             $Perch->add_css($custom_admin_version);
         }
     }
@@ -40,14 +40,12 @@
     =================================================== */
     // Use the sitepath if it's defined
     if (defined('PERCH_SITEPATH')) {
-        $favicon_version = '<link rel="shortcut icon" href="' . PERCH_SITEPATH . 'perch/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/favicon.ico') . '">';
-        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}" . PERCH_SITEPATH . "perch/addons/plugins/ui/favicon.ico")) {
-            $Perch->add_head_content($favicon_version);
+        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}" . PERCH_SITEPATH . PERCH_LOGINPATH. "/addons/plugins/ui/favicon.ico")) {
+            $Perch->add_head_content('<link rel="shortcut icon" href="' . PERCH_SITEPATH . PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] .  PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico') . '">');
         }
     } else {
         // Otherwise assume its the document root
-        $favicon_version = '<link rel="shortcut icon" href="/perch/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/perch/addons/plugins/ui/favicon.ico') . '">';
-        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}/perch/addons/plugins/ui/favicon.ico")) {
-            $Perch->add_head_content($favicon_version);
+        if (file_exists("{$_SERVER['DOCUMENT_ROOT']}" . PERCH_LOGINPATH . "/addons/plugins/ui/favicon.ico")) {
+            $Perch->add_head_content('<link rel="shortcut icon" href="'.PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] .  PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico') . '">');
         }
     }
