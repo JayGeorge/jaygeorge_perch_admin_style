@@ -1,3 +1,17 @@
+/* Uncomment this selector to hide/show the admin style menu in the Perch admin */
+/* .appmenu [href*="jaygeorge_perch_admin_style"] {
+    clip: rect(1px, 1px, 1px, 1px);
+
+    position: absolute!important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+} */
+/* Alternatively if you want to hide it completely so it's not in the document flow you can use: */
+/* .appmenu [href*="jaygeorge_perch_admin_style"] {
+    display: none;
+} */
+
 /* Redefine/override any CSS variables here */
 body {
     /* GROUP VARIABLES -- DECORATION -- COLOURS -- THEME

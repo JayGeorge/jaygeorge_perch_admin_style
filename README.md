@@ -67,32 +67,7 @@ Here is an example of a styled Redactor textarea:
 
 #### Hiding the admin style link
 
-If you'd like to hide the admin style link in the menu you can add the following code to `custom.css`.
-
-This will hide the menu item but you will still be able to tab to it using your keyboard.
-
-```css
-[href*="admin_style"] {
-    /* START SCREEN READER TEXT
-    --------------------------- */
-    clip: rect(1px, 1px, 1px, 1px);
-
-    position: absolute!important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    /* END SCREEN READER TEXT
-    ------------------------- */
-}
-```
-
-Alternatively if you want to hide it completely so it's not in the document flow you can use:
-
-```css
-[href*="admin_style"] {
-    display: none;
-}
-```
+If you'd like to hide the admin style link in the menu, I've included a CSS sample for you to uncomment at the top of `custom-admin.css`.
 
 ## Installation
 
