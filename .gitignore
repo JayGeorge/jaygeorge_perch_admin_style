@@ -9,3 +9,6 @@
 # Gulp, Grunt, etc.
 # Ignore node_modules, we already have the install information from package.js
 node_modules/
+
+# Ignore translation files dynamically added by perch
+lang/*.txt
