@@ -24,9 +24,17 @@ if (file_exists(__DIR__ . "/../../plugins/ui/custom-admin.css")) {
 
 $Perch->add_css($API->get('Settings')->get('jaygeorge_perch_admin_style_external_font_stylesheet')->val());
 
+/* LOAD CSS FOR ROLE
+=================================================== */
+$role = $CurrentUser->roleSlug();
+if (file_exists(__DIR__ . '/../../plugins/ui/custom-admin-' . $role . '.css')) {
+    $Perch->add_css(PERCH_LOGINPATH .'/addons/plugins/ui/custom-admin-' . $role . '.css?v=' . filemtime(__DIR__ . '/../../plugins/ui/custom-admin-' . $role . '.css'));
+}
+
 /* GROUP LOAD THE FAVICON
 =================================================== */
 
 if (file_exists(__DIR__ . "/../../plugins/ui/favicon.ico")) {
     $Perch->add_head_content('<link rel="shortcut icon" href="' . PERCH_LOGINPATH.'/addons/plugins/ui/favicon.ico?v=' . filemtime(__DIR__ . '/../../plugins/ui/favicon.ico') . '">');
 }
+
