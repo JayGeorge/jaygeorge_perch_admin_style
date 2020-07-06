@@ -115,6 +115,10 @@ If you've already downloaded a repo and want to fetch submodules, if you're usin
 
 ## Troubleshooting
 
+### The Login Stylesheet is not Loading
+
+Make sure you have copied `/perch/addons/jaygeorge_perch_admin_style/extra/_config.inc` to `/perch/addons/plugins/ui/_config.inc`
+
 ### Errors
 
 #### Notice: ob_flush(): failed to flush buffer
